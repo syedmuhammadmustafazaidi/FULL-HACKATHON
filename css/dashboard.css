@@ -1,0 +1,156 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aliceblue;
+}
+/* navbar */
+
+.h1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.navbar {
+  display: flex;
+  height: 3vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #047d73;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  flex: 1;
+  text-align: right;
+}
+
+.login-link {
+  color: #fff;
+  text-decoration: none;
+}
+#logout-btn {
+  background-color: #7e00c2;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+}
+#username {
+  background-color: #7e00c2;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+}
+
+.dashtext {
+  display: flex;
+  margin: 30px 90px;
+  width: max-content;
+}
+
+#blogs {
+  width: 881px;
+  height: 330px;
+  margin: 30px 90px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+}
+.input-blog {
+  width: 100%;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+input {
+  padding: 5px;
+  border: 2px solid #006151;
+  border-radius: 5px;
+  font: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+textarea {
+  border: 2px solid #006151;
+  padding: 10px;
+  font-size: 15px;
+}
+.blog-btn {
+  width: max-content;
+  padding: 10px;
+  border: none;
+  background-color: #0044a9;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+#posts {
+  width: 881px;
+  margin: 30px 90px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+}
+.row {
+  width: 568px;
+  height: 85px;
+  display: flex;
+  gap: 15px;
+}
+.img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+.heading {
+  width: 324px;
+  height: 58px;
+  margin: 0;
+}
+
+.desc {
+  width: 275px;
+  height: 19px;
+  color: #6c757d;
+  font-size: 16px;
+  line-height: 19.36px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.content {
+  width: 833px;
+  height: 196px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.update {
+  width: 97px;
+  height: 28px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  color: #7749f8;
+  cursor: pointer;
+}

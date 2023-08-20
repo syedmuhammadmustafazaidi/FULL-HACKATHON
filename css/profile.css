@@ -1,0 +1,151 @@
+/* Reset some default styling */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+#no{
+  text-decoration: none;
+  color: rgb(0, 0, 48);
+}
+body {
+  background-color: #f0f0f0;
+}
+/* navbar */
+
+.h1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.navbar {
+  display: flex;
+  height: 3vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #047d73;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  flex: 1;
+  text-align: right;
+}
+
+.login-link {
+  color: #fff;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.details {
+  margin-left: 20px;
+}
+
+h3,
+h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="password"] {
+  width: 316px;
+  height: 38px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+input[type="button"] {
+  width: 169px;
+  height: 38px;
+  background: #7749f8;
+
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="button"]:hover {
+  background: #7749f8;
+}
+#logout-btn {
+  background-color: #7e00c2;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+}
+#username {
+  background-color: #7e00c2;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.profile-heading {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+}
+
+.profiletext {
+  display: flex;
+  margin: 30px 90px;
+  width: max-content;
+}
+
+.profile {
+  width: 881px;
+  height: 748px;
+  margin: 30px 90px;
+  border: 3px solid green;
+  gap: 16px;
+  background-color: #fff;
+border-radius: 15px;
+}
+
+.profile-img {
+  width: 345px;
+  height: 304px;
+  padding: 24px;
+  gap: 16px;
+}
+
+img {
+  width: 300.19px;
+  height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.text {
+  padding: 5px;
+}
+
+.pass{
+    margin-bottom: 10px;
+}

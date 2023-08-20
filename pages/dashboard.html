@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="blog">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="h1">My Eye-Catching App</h1>
+
+        </div>
+        <div class="navbar-right">
+          <a href="./profile.html" id="username">username</a>
+          <button id="logout-btn">Logout</button>
+        </div>
+      </nav>
+      <div class="dashboard">
+        <h1 class="dashtext">Dashboard</h1>
+      </div>
+      <section id="blogs">
+        <div class="input-blog">
+          <input type="text" placeholder="Enter Title" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter Your Comment "
+          ></textarea>
+          <button class="blog-btn">Publish </button>
+        </div>
+      </section>
+
+      <div>
+        <h2 class="dashtext">All Comments</h2>
+      </div>
+
+      <section id="posts">
+        <div class="row">
+          <img
+            src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzi2MtF0qG3RUpfK76iEyuH97MpjlLX4Mv16GtW25vpVCif_y__40rzNvM-MvSP-s04E&usqp=CAU"
+            alt="new-img"
+            class="img"
+          />
+          <div class="text">
+            <h1 class="heading">
+A powerful Bike to ride and Enjoy Your day!
+
+            </h1>
+            <h6 class="desc"> 19th August 2023 </h6>
+          </div>
+        </div>
+        <div class="content">
+        <p>
+          Honda offers motorbikes and cars in Pakistan. Atlas Honda motorbikes are very popular by their strong performance. The CB 150F is the best option for riding around the city with comfort and full support for fast performance.
+
+        </p>
+        </div>
+        <div class="update">
+          <li>Delete</li>
+          <li>Edit</li>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Assuming you're using Firebase Authentication
+      const logoutButton = document.getElementById("logout-btn");
+
+      logoutButton
+        .addEventListener("click", () => {
+          // Perform logout operation using Firebase Authentication
+
+          // Redirect to the login page after logout
+          window.location.href = "./login.html"; // Change the path as needed
+        })
+        .catch((error) => {
+          // Handle logout error
+          console.error("Logout error:", error);
+        });
+    </script>
+  </body>
+</html>

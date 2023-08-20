@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+       
+        <h1 class="h1">My Eye-Catching App</h1>
+       
+      </div>
+      <div class="navbar-right">
+        <a href="./profile.html" id="username">username</a>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+    <div class="profile-heading">
+      <h1 class="profiletext"  ><a  id="no" href="./profile.html">PROFILE</a> </h1>
+    </div>
+<center> 
+    <div class="profile">
+      <div class="profile-img">
+        <img
+          src="https://global-uploads.webflow.com/5ca5fe687e34be0992df1fbe/6235ea7fbaf601e8d3980228_boy-kicking-ball-on-football-field-2021-09-24-03-47-56-utc-min-min.jpg "
+          alt=""
+        />
+      </div>
+      <div class="details">
+        <h2 class="text">User</h2>
+        <h2 class="text pass">New</h2>
+          
+      </div>
+    </div>
+  </center>
+    <script>
+      // Assuming you're using Firebase Authentication
+      const logoutButton = document.getElementById("logout-btn");
+
+      logoutButton
+        .addEventListener("click", () => {
+          // Perform logout operation using Firebase Authentication
+
+          // Redirect to the login page after logout
+          window.location.href = "./login.html"; // Change the path as needed
+        })
+        .catch((error) => {
+          // Handle logout error
+          console.error("Logout error:", error);
+        });
+    </script>
+  </body>
+</html>

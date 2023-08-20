@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blogging signup</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <h1 class="h1">My Eye-Catching App</h1>
+      </div>
+      <div class="navbar-right">
+        <a href="./pages/login.html" class="login-link">Login</a>
+      </div>
+    </nav>
+    <div class="header">
+      <h2>SignUp</h2>
+    </div>
+    <div class="signup-container">
+      <h1>Signup</h1>
+      <form id="signup-form">
+        <input
+          type="text"
+          id="first-name"
+          placeholder="First Name"
+          required
+          maxlength="20"
+        />
+        <input
+          type="text"
+          id="last-name"
+          placeholder="Last Name"
+          required
+          maxlength="20"
+        />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder="Confirm Password"
+          required
+        />
+        <button type="button" id="SignUpBtn">Signup</button>
+      </form>
+    </div>
+    <!-- Other HTML content -->
+
+    <script
+      src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"
+      type="module"
+    ></script>
+    <script src="./js/firebaseconfig.js" type="module"></script>
+    <script src="./js/signup.js" type="module"></script>
+  </body>
+</html>
